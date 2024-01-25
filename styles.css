@@ -1,0 +1,161 @@
+/* style.css */
+body{
+    background-image: url('images/background.jpg');
+    background-size: cover; /* Scale the background image to cover the entire viewport */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Fix the background image position */
+    margin: 0; /* Remove default margin */
+}
+
+header {
+    background-image: url('images/silver-fountain-pen-lies-blue-background_151013-24117.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    color: white;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.header-photo {
+    width: 150px; /* Adjust as needed */
+    height: auto;
+    margin-right: 10px;
+}
+
+.header-title {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.header-content h1 {
+    font-family: 'Lucida Handwriting', cursive; /* Calligraphic font */
+    font-size: 36px; /* Larger font size */
+    text-align: center;
+}
+
+.header-content h2 {
+    font-size: 24px; /* Adjust subtitle size as needed */
+    text-align: center;
+}
+
+.main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.main-nav li {
+    float: left;
+}
+
+.main-nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.main-nav li a:hover {
+    background-color: #111;
+}
+
+.main-content {
+    display: flex;
+}
+
+.left-column {
+    width: 75%;
+    padding: 20px;
+    /* Additional styling for the left column */
+}
+
+.right-column {
+    width: 25%;
+    padding: 20px;
+    /* Additional styling for the right column */
+}
+
+.card {
+    display: flex;
+    margin-bottom: 20px; /* Space between cards */
+    border: 1px solid #ddd; /* Optional border */
+    padding: 10px;
+}
+
+.card-image-left, .card-image-right {
+    width: 10%;
+    height: auto;
+}
+
+.card-image-right {
+    order: 1; /* Push the image to the right */
+}
+
+.card-content {
+    padding: 15px;
+    flex: 1; /* Take remaining space */
+    background-color: rgba(255, 228, 225, 0.8); /* Black background with 10% opacity */
+    color: Indigo; /* Specifically sets the color of the title to white */
+    font-size: 1vw;
+}
+
+
+.card-content h3 {
+    margin-top: 0;
+    color: Fuchsia; /* Specifically sets the color of the title to white */
+    font-size: 1.5vw;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    /* Additional footer styling */
+}
+
+@media (max-width: 800px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-photo {
+        margin-bottom: 10px;
+    }
+
+    .header-content h1 {
+        font-size: 28px; /* Adjust for smaller screens */
+    }
+    
+    .main-nav li {
+        float: none;
+        width: 100%;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .left-column, .right-column {
+        width: 100%;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    .card-image-left, .card-image-right {
+        width: 100%;
+        order: 0; /* Reset order for small screens */
+    }
+}
