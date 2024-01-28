@@ -8,14 +8,15 @@ body{
 }
 
 header {
-    background-color: #ADD8FA;
-    background-image: url('images/silver-fountain-pen-lies-blue-background_151013-24117.jpg');
-    background-size: contain;
-    background-position: right center;
-    background-repeat: no-repeat;
+    background-color: #e6dfd7;
+    background-image: url('images/headerback.jpg'),url('images/7857460.jpg');
+    background-size: contain, contain;
+    background-position: left center, right center;
+    background-repeat: no-repeat, no-repeat;
     width: 100%;
     min-height: 200px;
     max-height: 460px;
+    
     padding: 20px;
     color: #7C1813;
 }
