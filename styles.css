@@ -5,6 +5,7 @@ body{
     background-position: center; /* Center the background image */
     background-attachment: fixed; /* Fix the background image position */
     margin: 0; /* Remove default margin */
+    width: 100%;
 }
 
 header {
@@ -16,8 +17,6 @@ header {
     width: 100%;
     min-height: 200px;
     max-height: 460px;
-    
-    padding: 20px;
     color: #7C1813;
 }
 
@@ -48,12 +47,32 @@ header {
     text-align: center;
 }
 
+.nav-toggle {
+    background-color: transparent; /* Make the button background transparent */
+    border: none; /* Remove any default borders */
+    cursor: pointer; /* Change the mouse cursor to pointer when hovering over the button */
+    font-size: 30px; /* Increase the size of the icon */
+    padding: 10px; /* Add some padding for better touch area */
+    display: none; /* Hide toggle button on larger screens */
+    /* Add more styles for the button as needed */
+}
+
+.main-nav {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Display the list items inline by default */
+    justify-content: left; /* Center the list items */
+    align-items: center; /* Align items vertically */
+}
+
 .main-nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333; /* Example background color */
+    
 }
 
 .main-nav li {
@@ -102,8 +121,10 @@ header {
 }
 
 .card-image-left, .card-image-right {
-    width: 10%;
+    width: 30%;
+    max-width: 150px;
     height: auto;
+    display: block;
 }
 
 .card-image-right {
@@ -115,14 +136,41 @@ header {
     flex: 1; /* Take remaining space */
     background-color: rgba(255, 228, 225, 0.8); /* Black background with 10% opacity */
     color: Indigo; /* Specifically sets the color of the title to white */
-    font-size: 1vw;
+    font-size: 20px;
 }
 
 
 .card-content h3 {
     margin-top: 0;
     color: Fuchsia; /* Specifically sets the color of the title to white */
-    font-size: 1.5vw;
+    font-size: 24px;
+}
+
+.card-image-article {
+    float: left;
+    margin: 5px;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    width: 25%;
+    height: auto;
+}
+
+.text-centre {
+    text-align: center;
+}
+
+.text-bold {
+    font-weight:bolder;
+}
+
+.pad-down {
+    padding-bottom: 2%;
+}
+
+
+
+pre {
+    white-space: pre-line;
 }
 
 .right-column {
@@ -199,25 +247,137 @@ footer a {
     color: #4CAF50; /* A different color for links to stand out, adjust as needed */
 }
 
+.img-contact {
+    width: 25%;
+    height: auto;
+    padding: 2%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 920px) {
+    header {
+        background-color: #e6dfd7;
+        background-image: url('images/7857460.jpg');
+        background-size:  contain;
+        background-position: right center;
+        background-repeat: no-repeat;
+        width: 100%;
+        min-height: 200px;
+        max-height: 460px;
+        
+        color: #7C1813;
+    }
+
+    header img {
+        order: -1;
+    }
+
+    .header-title {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    .card-content {
+        padding: 15px;
+        flex: 1; /* Take remaining space */
+        background-color: rgba(255, 228, 225, 0.8); /* Black background with 10% opacity */
+        color: Indigo; /* Specifically sets the color of the title to white */
+    }
+    
+    
+    .card-content h3 {
+        margin-top: 0;
+        color: Fuchsia; /* Specifically sets the color of the title to white */
+    }
+
+    .card-image-left, .card-image-right {
+        display: none;
+    }
+}
 
 @media (max-width: 800px) {
+ 
+    
+    header {
+        background-color: #e6dfd7;
+        background-image: url('images/headerback.jpg');
+        background-size:  contain;
+        background-position: left center;
+        background-repeat: no-repeat;
+        width: 100%;
+        min-height: 200px;
+        max-height: 460px;
+        
+        color: #7C1813;
+    }
+
     .header-content {
         flex-direction: column;
         text-align: center;
     }
 
     .header-photo {
+        width: 130px; /* Adjust as needed */
+        height: auto;
         margin-bottom: 10px;
     }
 
     .header-content h1 {
-        font-size: 28px; /* Adjust for smaller screens */
+        font-size: 24px; /* Adjust for smaller screens */
+    }
+
+    .header-content h2 {
+        font-size: 20px; /* Adjust for smaller screens */
     }
     
-    .main-nav li {
-        float: none;
-        width: 100%;
+    .main-nav  {
+        display: none; /* Initially hide the navigation list */
     }
+
+    .main-nav.active {
+        display: flex; /* Display navigation items when active (menu is toggled) */
+        
+    }
+
+    .main-nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-nav li a {
+        font-size: 14px; /* Reduce the font size for smaller screens */
+        padding: 5px; /* Adjust padding for a tighter layout */
+        
+    }
+
+    .nav-toggle {
+        display: block; /* Display the toggle button on smaller screens */
+    }
+
 
     .main-content {
         flex-direction: column;
@@ -225,14 +385,36 @@ footer a {
 
     .left-column, .right-column {
         width: 100%;
+        padding: 0px;
+        margin: 0%;
     }
 
     .card {
         flex-direction: column;
+        width: 80%; /* Set the width of the cards to be 90% of the viewport width */
+        margin: 10px auto; /* Center the cards horizontally with automatic margins */
     }
 
-    .card-image-left, .card-image-right {
+    .card-image-article {
         width: 100%;
-        order: 0; /* Reset order for small screens */
+        height: auto;
+    }
+
+    .right-column {
+        width: 90%; /* Set the width of the cards to be 90% of the viewport width */
+        margin: 10px auto; /* Center the cards horizontally with automatic margins */
+        display: grid; /* Use CSS Grid for layout */
+        grid-template-columns: repeat(2, 1fr); /* Create two columns with equal width */
+        grid-gap: 10px; /* Set the gap between grid items */
+        vertical-align: top;
+    }
+
+    .right-column img {
+        width: 100%; /* Make images fill their grid area */
+        height: auto; /* Maintain the aspect ratio of the images */
+    }
+
+    .footer {
+        width: 100%;
     }
 }

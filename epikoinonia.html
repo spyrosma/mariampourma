@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <title>Μαρία Μπόυρμα</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            
+            <div class="header-title">
+                <h1>Μαρία Μπουρμά</h1>
+                <h2>Μπερδεμένα όνειρα χρωματιστά,<br>γυάλινοι βόλοι σε αδέξια χέρια.</h2>
+            </div>
+            <img src="images/maria_bourma_2.jpg" alt="Photo" class="header-photo">
+        </div>
+    </header>
+    <button class="nav-toggle" aria-label="toggle navigation">
+        <i class="fas fa-bars"></i> <!-- Font Awesome Hamburger Icon -->
+    </button>
+    <nav class="main-nav">
+        <ul>
+            <li class="selected"><a href="index.html">Αρχική Σελίδα</a></li>
+            <li><a href="viografia.html">Βιογραφία</a></li>
+            <li><a href="Nhsi-pou-psaxnei-xarth.html">Νησί που ψάχνει χάρτη</a></li>
+            <li><a href="synenteykseis.html">Συνεντεύξεις</a></li>
+            <li><a href="epikoinonia.html">Επικοινωνία</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <section class="left-column">
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="card-content">
+                    <h3>Επικοινωνία</h3>
+                    <img src="images/contact.png" alt="Μαρία Μπουρμά" class="img-contact">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Όνομα:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Θέμα:</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Μήνυμα:</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit">Αποστολή</button>
+                    </form>
+
+                    
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+
+        </section>
+        <aside class="right-column">
+            <figure>
+                <figcaption> Αγοράστε από τον εκδοτικό οίκο</figcaption>
+                <a href="https://iolcos.gr/eshop/titlos/nisi-poy-psachnei-charti/" target="_blank">
+                    <img src="images/Nhsi-pou-psaxnei-xarth.jpg" alt="Αγοράστε από τον εκδοτικό οίκο">
+                </a>
+                
+            </figure>
+
+            <figure>
+                <figcaption>Ορεστιάδα</figcaption>
+                <a href="orestiada.html">
+                    <img src="images/orestada.jpg" alt="Ορεστιάδα">
+                </a>
+                
+            </figure>
+
+            <figure>
+                <figcaption>Έβρος</figcaption>
+                <a href="evros.html">
+                    <img src="images/faros.jpg" alt="Έβρος">
+                </a>
+                
+            </figure>
+
+            <figure>
+                <figcaption>Φιλολογικός Όμιλος Ελλάδος</figcaption>
+                <a href="https://www.facebook.com/philo.assoc.skg/" target="_blank">
+                    <img src="images/foe.jpg" alt="Φιλολογικός Όμιλος Ελλάδος">
+                </a>
+                
+            </figure>
+        </aside>
+    </main>
+
+    <footer>
+        <ul class="footer-nav">
+            <li><a href="index.html">Αρχική Σελίδα</a></li>
+            <li><a href="viografia.html">Βιογραφία</a></li>
+            <li><a href="Nhsi-pou-psaxnei-xarth.html">Νησί που ψάχνει χάρτη</a></li>
+            <li><a href="synenteykseis.html">Συνεντεύξεις</a></li>
+            <li><a href="epikoinonia.html">Επικοινωνία</a></li>
+        </ul>
+        <p>Πνευματικά δικαιώματα &copy; 2024 Μαρία Μπουρμά</p>
+        <p>Δημιουργήθηκε από <a href="mailto:spyrosma@gmail.com">Σπύρος Μαγκλάρας</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
