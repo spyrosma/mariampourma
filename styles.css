@@ -146,6 +146,12 @@ header {
     font-size: 24px;
 }
 
+.card-content a {
+    color: blue; /* Specifically sets the color of the title to white */
+    font-size: 20px;
+    text-decoration: underline;
+}
+
 .card-image-article {
     float: left;
     margin: 5px;
@@ -172,6 +178,25 @@ header {
 pre {
     white-space: pre-line;
 }
+
+.ul-syn {
+    padding-top: 3%;
+    padding-left: 12%;
+    
+}
+
+.ul-syn li{
+    list-style-type:square;
+    padding-bottom: 1%;
+}
+
+.youtube-video {
+    aspect-ratio: 16 / 9;
+    width: 75%;
+    padding-top: 3%;
+    padding-left: 12%;
+    padding-right: 12%;
+  }
 
 .right-column {
     /* Ensure the column takes up the designated space and is aligned properly */
